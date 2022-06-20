@@ -1,8 +1,6 @@
-number = int(input('Введите целое положительное число: '))
-max_number = number % 10
-number = number // 10
-while number > 0:
-    if number % 10 > max_number:
-        max_number = number % 10
-    number = number // 10
-print('Самая большая цифра в числе: ', max_number)
+my_str = input("введите строку из не скольких слов: ")
+broken_string = my_str.split(' ')
+for number, word in enumerate(broken_string, 1):
+    if len(word) > 10:
+        word = word[0:10]
+    print(f"{number} {word}")

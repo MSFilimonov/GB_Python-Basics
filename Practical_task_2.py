@@ -1,13 +1,4 @@
-sec = int(input('Введите время в секундах: '))
-hour = (sec // 3600) % 24
-minutes = (sec // 60) % 60
-second = sec % 60
-if minutes < 10:
-    minutes = str('0' + str(minutes))
-else:
-    minutes = str(minutes)
-if second < 10:
-    second = str('0' + str(second))
-else:
-    s = str(second)
-print(str(hour) + ':' + str(minutes) + ':' + str(second))
+my_list = [int(elements) for elements in input("Введите элементы списка: ").split()]
+for elements in range(1, len(my_list), 2):
+    my_list[elements - 1], my_list[elements] = my_list[elements], my_list[elements - 1]
+print(' '.join([str(elements) for elements in my_list]))

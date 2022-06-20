@@ -1,5 +1,3 @@
-name = str(input('Введите ваше имя: '))
-years = int(input('Укажите ваш возраст: '))
-print(type(name))
-print(type(years))
-print('Привет', name, 'вам точно', years, '?')
+my_list = [3.14, 'mathematical constant', True, ['C=2pr2'], None, 1, {1: 121}, (1, 2)]
+for elements in my_list:
+    print(f'{elements, type(elements)}')
